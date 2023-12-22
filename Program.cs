@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 
 public class DemantGetStarted
