@@ -11,13 +11,13 @@ public class DemantGetStarted
         var title = driver.Title; // information about browser
         driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromMilliseconds(500); //Waiting Stategies based on page load
 
-        //var acceptBox = driver.FindElement(By.Id("[id=coiPage-3]"));
-        //acceptBox.Click();
+        var acceptBox = driver.FindElement(By.CssSelector("[aria-label=\"I accept\"]"));
+        acceptBox.Click();
 
-        var aboutButton = driver.FindElement(By.Name("About"));
+        var aboutButton = driver.FindElement(By.ClassName("About"));
         aboutButton.Click();
 
-        var managAndGovern = driver.FindElement(By.Name("Management and governance"));
+        var managAndGovern = driver.FindElement(By.ClassName("Management and governance"));
         managAndGovern.Click();
 
         var text = driver.FindElement(By.ClassName(".like-h1-xl-light"));

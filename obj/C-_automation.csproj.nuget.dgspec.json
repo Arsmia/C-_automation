@@ -34,6 +34,9 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -43,6 +46,10 @@
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.16.2, )"
+            },
+            "xunit.assert": {
+              "target": "Package",
+              "version": "[2.7.0, )"
             }
           },
           "imports": [

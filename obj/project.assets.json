@@ -33,6 +33,19 @@
         "build": {
           "buildTransitive/Selenium.WebDriver.targets": {}
         }
+      },
+      "xunit.assert/2.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/xunit.assert.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/xunit.assert.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
@@ -83,11 +96,29 @@
         "selenium.webdriver.4.16.2.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
+    },
+    "xunit.assert/2.7.0": {
+      "sha512": "CCTs3bUhmIS4tDwK6Cn/IiabG3RhYzdf65eIkO7u9/grKoN9MrN780LzVED3E8v+vwmmj7b5TW3/GFuZHPAzWA==",
+      "type": "package",
+      "path": "xunit.assert/2.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/README.md",
+        "_content/logo-128-transparent.png",
+        "lib/net6.0/xunit.assert.dll",
+        "lib/net6.0/xunit.assert.xml",
+        "lib/netstandard1.1/xunit.assert.dll",
+        "lib/netstandard1.1/xunit.assert.xml",
+        "xunit.assert.2.7.0.nupkg.sha512",
+        "xunit.assert.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Selenium.WebDriver >= 4.16.2"
+      "Selenium.WebDriver >= 4.16.2",
+      "xunit.assert >= 2.7.0"
     ]
   },
   "packageFolders": {
@@ -123,6 +154,9 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -132,6 +166,10 @@
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[4.16.2, )"
+          },
+          "xunit.assert": {
+            "target": "Package",
+            "version": "[2.7.0, )"
           }
         },
         "imports": [

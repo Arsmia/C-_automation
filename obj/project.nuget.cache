@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "YCyupviW/oDn13v/o4rjhtUAO5nQRe9YhOrHHXovzZnSGDrIddTyhadmGVt7zPWvjkYmWCB+dEdOszyGi4Nq0A==",
+  "dgSpecHash": "M1DmMdPfvp8a3qQ0m9Zgn21rdK/OHtkwBnYt5l8D7RtzorCx/ysvDleZJSjkDHV1SO2Mp3gFiUG0lHiixDqjnQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\sviat\\source\\repos\\C-_automation\\C-_automation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sviat\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\sviat\\.nuget\\packages\\selenium.webdriver\\4.16.2\\selenium.webdriver.4.16.2.nupkg.sha512"
+    "C:\\Users\\sviat\\.nuget\\packages\\selenium.webdriver\\4.16.2\\selenium.webdriver.4.16.2.nupkg.sha512",
+    "C:\\Users\\sviat\\.nuget\\packages\\xunit.assert\\2.7.0\\xunit.assert.2.7.0.nupkg.sha512"
   ],
   "logs": []
 }
