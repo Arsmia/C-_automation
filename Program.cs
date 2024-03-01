@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using Xunit;
 
 public class DemantGetStarted
 {
@@ -20,15 +21,15 @@ public class DemantGetStarted
         var managAndGovern = driver.FindElement(By.ClassName("Management and governance"));
         managAndGovern.Click();
 
-        var text = driver.FindElement(By.ClassName(".like-h1-xl-light"));
-        Assert.AreEqual("Executive Board and Board of Directors", text);
+        var webElement = driver.FindElement(By.ClassName(".like-h1-xl-light"));
+        Assert.Equal("Executive Board and Board of Directors", webElement.Text);
 
         var searchElement = driver.FindElement(By.ClassName("search"));
         searchElement.SendKeys("Remuneration report for 2021");
         searchElement.Click();
 
-        var searchResult = driver.FindElement(By.ClassName("search-result"));
-        Assert.AreEqual("Remuneration report 'for' 2021");
+        webElement = driver.FindElement(By.ClassName("search-result"));
+        Assert.Equal("Remuneration report 'for' 2021", webElement.Text);
 
     }
 }
